@@ -1,0 +1,15 @@
+{
+  "Actor": {
+    "types": [
+      "character", 
+      "npc",
+      "companion"
+    ]
+  },
+  "Item": {
+    "types": [
+      "Action",
+      "Object"
+    ]
+  }
+}
