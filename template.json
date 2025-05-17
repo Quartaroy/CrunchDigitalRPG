@@ -8,8 +8,10 @@
   },
   "Item": {
     "types": [
-      "Action",
-      "Object"
-    ]
+      "action"
+    ],
+      "action" :{
+        "speed": 0
+      }
   }
 }
