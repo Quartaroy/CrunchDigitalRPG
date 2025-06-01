@@ -1,0 +1,35 @@
+{
+  "Actor": {
+    "types": ["entity"],
+    "templates": {
+      "base": {
+        "initiative": 0,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    "entity": {
+      "templates": ["base"],
+      "description": "",
+      "attributes": {},
+      "skills": {}
+    }
+  },
+  "Item": {
+    "types": ["action"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "action": {
+      "templates": ["base"],
+      "timeCost": 0,
+      "duration": "",
+      "recharge": ""
+    }
+  }
+}

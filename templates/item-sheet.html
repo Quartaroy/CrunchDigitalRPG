@@ -1,0 +1,30 @@
+<form class="crunch-sheet item-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Item Name"/></h1>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="form-group">
+      <label for="itemTimeCost">Time Cost</label>
+      <input type="number" name="system.timeCost" value="{{item.system.timeCost}}" data-dtype="Number" placeholder="0"/>
+    </div>
+
+    <div class="form-group">
+      <label for="itemDuration">Duration</label>
+      <input type="text" name="system.duration" value="{{item.system.duration}}" placeholder="e.g., Instant, 1 round"/>
+    </div>
+
+    <div class="form-group">
+      <label for="itemRecharge">Recharge</label>
+      <input type="text" name="system.recharge" value="{{item.system.recharge}}" placeholder="e.g., Short Rest, Per Scene"/>
+    </div>
+
+    <div class="form-group editor-container">
+      <label for="itemDescription">Description</label>
+      <textarea name="system.description" rows="6">{{item.system.description}}</textarea>
+    </div>
+  </section>
+</form>

@@ -1,0 +1,30 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <h1><input type="text" name="name" value="{{actor.name}}" data-dtype="String" /></h1>
+  </header>
+
+  <div class="position-display">
+    <h2>Position</h2>
+    <div class="coordinates">
+      <label>X: <input type="number" name="system.position.x" value="{{actor.system.position.x}}" data-dtype="Number"/></label>
+      <label>Y: <input type="number" name="system.position.y" value="{{actor.system.position.y}}" data-dtype="Number"/></label>
+      <label>Z: <input type="number" name="system.position.z" value="{{actor.system.position.z}}" data-dtype="Number"/></label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="system.initiative">Initiative</label>
+    <input type="number" name="system.initiative" value="{{actor.system.initiative}}" data-dtype="Number"/>
+  </div>
+
+  <section class="sheet-body">
+    {{#if debug}}
+    <div class="debug-info">
+      <h3>Debug Data</h3>
+      <pre>{{json debug}}</pre>
+      <h3>Full Actor System Data</h3>
+      <pre>{{json actor.system}}</pre>
+    </div>
+    {{/if}}
+  </section>
+</form>

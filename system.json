@@ -1,0 +1,30 @@
+{
+  "id": "crunch",
+  "title": "Crunch",
+  "description": "Crunch Digital RPG System",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13.342
+  },
+  "authors": [{
+      "name": "Simple Fox",
+      "email": "Quartaroy@gmail.com",
+      "discord": "verysimplefox"
+  }],
+  "esmodules": ["crunch.mjs"],
+  "styles": [],
+  "languages": [{
+    "lang": "en",
+    "name": "English",
+    "path": "lang/en.json"
+  }],
+  "documentTypes": {
+    "Actor": {
+      "entity": { "htmlFields": ["background.biography"] }
+    },
+    "Item": {
+      "action": { "htmlFields": ["description"] }
+    }
+  }
+}
